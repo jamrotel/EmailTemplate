@@ -16,5 +16,20 @@ namespace EmailTemplate.Panel
         {
             InitializeComponent();
         }
+
+        //================USER-ACCOUNT-SERVICES==================
+        private void btnNetworkAccountBundle_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenNetworkAccountBundle();
+        }
+        private void btnNetworkAccountOnly_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenNetworkAccountOnly();
+
+        }
+        //================USER-ACCOUNT-SERVICES==================
+
     }
 }

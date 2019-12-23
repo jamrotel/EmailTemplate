@@ -134,35 +134,71 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubForms\ElevatedAdminRights.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\ElevatedAdminRights.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\ElevatedAdminRights.Designer.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\ElevatedAdminRights.Designer.cs">
       <DependentUpon>ElevatedAdminRights.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\RemoteAccessCitrix.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\MSLyncAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\RemoteAccessCitrix.Designer.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\MSLyncAccount.Designer.cs">
+      <DependentUpon>MSLyncAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\RemoteAccessCitrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\RemoteAccessCitrix.Designer.cs">
       <DependentUpon>RemoteAccessCitrix.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\SharedFileFolderAccess.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\SharedFileFolderAccess.Designer.cs">
-      <DependentUpon>SharedFileFolderAccess.cs</DependentUpon>
+    <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.Designer.cs">
+      <DependentUpon>AudioWebConferencing.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\VPNAccess.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\VPNAccess.Designer.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.Designer.cs">
+      <DependentUpon>SharedDriveAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.Designer.cs">
+      <DependentUpon>ShareFileAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\VPNAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\InstallationAccessRequest\VPNAccess.Designer.cs">
       <DependentUpon>VPNAccess.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\SoftwareInstallation.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\SoftwareInstallation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\SoftwareInstallation.Designer.cs">
+    <Compile Include="SubForms\InstallationAccessRequest\SoftwareInstallation.Designer.cs">
       <DependentUpon>SoftwareInstallation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountSuspension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountSuspension.Designer.cs">
+      <DependentUpon>NetworkAccountSuspension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountOnly.Designer.cs">
+      <DependentUpon>NetworkAccountOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountBundle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\UserAccountServices\NetworkAccountBundle.Designer.cs">
+      <DependentUpon>NetworkAccountBundle.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -202,20 +238,38 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\ElevatedAdminRights.resx">
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\ElevatedAdminRights.resx">
       <DependentUpon>ElevatedAdminRights.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\RemoteAccessCitrix.resx">
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\MSLyncAccount.resx">
+      <DependentUpon>MSLyncAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\RemoteAccessCitrix.resx">
       <DependentUpon>RemoteAccessCitrix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\SharedFileFolderAccess.resx">
-      <DependentUpon>SharedFileFolderAccess.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\AudioWebConferencing.resx">
+      <DependentUpon>AudioWebConferencing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\VPNAccess.resx">
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\SharedDriveAccess.resx">
+      <DependentUpon>SharedDriveAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\ShareFileAccess.resx">
+      <DependentUpon>ShareFileAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\VPNAccess.resx">
       <DependentUpon>VPNAccess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\SoftwareInstallation.resx">
+    <EmbeddedResource Include="SubForms\InstallationAccessRequest\SoftwareInstallation.resx">
       <DependentUpon>SoftwareInstallation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\UserAccountServices\NetworkAccountSuspension.resx">
+      <DependentUpon>NetworkAccountSuspension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\UserAccountServices\NetworkAccountOnly.resx">
+      <DependentUpon>NetworkAccountOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\UserAccountServices\NetworkAccountBundle.resx">
+      <DependentUpon>NetworkAccountBundle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -251,8 +305,6 @@
   <ItemGroup>
     <None Include="Resources\DXCLogo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SubForms\InstallationAccessRequest\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

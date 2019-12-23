@@ -28,28 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroButton15 = new MetroFramework.Controls.MetroButton();
             this.metroButton10 = new MetroFramework.Controls.MetroButton();
-            this.metroButton11 = new MetroFramework.Controls.MetroButton();
             this.metroButton12 = new MetroFramework.Controls.MetroButton();
             this.metroButton13 = new MetroFramework.Controls.MetroButton();
             this.metroButton14 = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // metroButton15
-            // 
-            this.metroButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.metroButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.metroButton15.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton15.ForeColor = System.Drawing.Color.White;
-            this.metroButton15.Location = new System.Drawing.Point(294, 326);
-            this.metroButton15.Name = "metroButton15";
-            this.metroButton15.Size = new System.Drawing.Size(226, 86);
-            this.metroButton15.TabIndex = 20;
-            this.metroButton15.Text = "STRIKE 3 - \r\nPending more info\r\n";
-            this.metroButton15.UseCustomBackColor = true;
-            this.metroButton15.UseCustomForeColor = true;
-            this.metroButton15.UseSelectable = true;
             // 
             // metroButton10
             // 
@@ -57,29 +41,14 @@
             this.metroButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.metroButton10.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton10.ForeColor = System.Drawing.Color.White;
-            this.metroButton10.Location = new System.Drawing.Point(62, 326);
+            this.metroButton10.Location = new System.Drawing.Point(294, 234);
             this.metroButton10.Name = "metroButton10";
             this.metroButton10.Size = new System.Drawing.Size(226, 86);
             this.metroButton10.TabIndex = 19;
-            this.metroButton10.Text = "STRIKE 2 - \r\nPending more info\r\n";
+            this.metroButton10.Text = "Email Account Creation";
             this.metroButton10.UseCustomBackColor = true;
             this.metroButton10.UseCustomForeColor = true;
             this.metroButton10.UseSelectable = true;
-            // 
-            // metroButton11
-            // 
-            this.metroButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.metroButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.metroButton11.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton11.ForeColor = System.Drawing.Color.White;
-            this.metroButton11.Location = new System.Drawing.Point(294, 234);
-            this.metroButton11.Name = "metroButton11";
-            this.metroButton11.Size = new System.Drawing.Size(226, 86);
-            this.metroButton11.TabIndex = 18;
-            this.metroButton11.Text = "STRIKE 1 - \r\nPending more info";
-            this.metroButton11.UseCustomBackColor = true;
-            this.metroButton11.UseCustomForeColor = true;
-            this.metroButton11.UseSelectable = true;
             // 
             // metroButton12
             // 
@@ -91,7 +60,7 @@
             this.metroButton12.Name = "metroButton12";
             this.metroButton12.Size = new System.Drawing.Size(226, 87);
             this.metroButton12.TabIndex = 17;
-            this.metroButton12.Text = "STRIKE 3 - \r\nPending Closure Approval";
+            this.metroButton12.Text = "Email Alias";
             this.metroButton12.UseCustomBackColor = true;
             this.metroButton12.UseCustomForeColor = true;
             this.metroButton12.UseSelectable = true;
@@ -106,7 +75,7 @@
             this.metroButton13.Name = "metroButton13";
             this.metroButton13.Size = new System.Drawing.Size(226, 86);
             this.metroButton13.TabIndex = 16;
-            this.metroButton13.Text = "STRIKE 2 - \r\nPending Closure Approval";
+            this.metroButton13.Text = "Disable Exisiting Email Account";
             this.metroButton13.UseCustomBackColor = true;
             this.metroButton13.UseCustomForeColor = true;
             this.metroButton13.UseSelectable = true;
@@ -121,34 +90,44 @@
             this.metroButton14.Name = "metroButton14";
             this.metroButton14.Size = new System.Drawing.Size(226, 87);
             this.metroButton14.TabIndex = 15;
-            this.metroButton14.Text = "STRIKE 1 - \r\nPending Closure Approval";
+            this.metroButton14.Text = "Access to Other Users\'s\r\nEmail Account";
             this.metroButton14.UseCustomBackColor = true;
             this.metroButton14.UseCustomForeColor = true;
             this.metroButton14.UseSelectable = true;
             // 
-            // EmailStrike
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(56, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(405, 31);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "EMAIL ACCOUNT SERVICES";
+            // 
+            // EmailAccountServices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.Controls.Add(this.metroButton15);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.metroButton10);
-            this.Controls.Add(this.metroButton11);
             this.Controls.Add(this.metroButton12);
             this.Controls.Add(this.metroButton13);
             this.Controls.Add(this.metroButton14);
-            this.Name = "EmailStrike";
+            this.Name = "EmailAccountServices";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroButton metroButton15;
         private MetroFramework.Controls.MetroButton metroButton10;
-        private MetroFramework.Controls.MetroButton metroButton11;
         private MetroFramework.Controls.MetroButton metroButton12;
         private MetroFramework.Controls.MetroButton metroButton13;
         private MetroFramework.Controls.MetroButton metroButton14;
+        private System.Windows.Forms.Label label1;
     }
 }

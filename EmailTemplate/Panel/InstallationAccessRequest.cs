@@ -22,7 +22,8 @@ namespace EmailTemplate.Panel
             InitializeComponent();
 
         }
-
+        
+        //===============Installation-Accss-REQUEST===================
         private void btnSoftware_Click(object sender, EventArgs e)
         {
             EmailTemplate em = new EmailTemplate();
@@ -50,7 +51,23 @@ namespace EmailTemplate.Panel
         private void btnSharedFileFolderAccess_Click(object sender, EventArgs e)
         {
             EmailTemplate em = new EmailTemplate();
-            em.OpenSharedFileFolderAccess();
-                    }
+            em.OpenShareFileAccess();
+        }
+        private void btnSharedDriveAccess_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenSharedDriveAccess();
+        }
+        private void btnMSLyncAccountCreation_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenMSLyncAccount();
+        }
+        private void btnAudioWebConferencing_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em =new EmailTemplate();
+            em.OpenAudioWebConferencing();
+        }
+        //===============Installation-Accss-REQUEST===================
     }
 }
