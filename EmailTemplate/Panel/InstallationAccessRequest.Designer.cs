@@ -198,7 +198,6 @@
             this.Controls.Add(this.btnSoftware);
             this.Name = "InstallationAccessRequest";
             this.Size = new System.Drawing.Size(850, 712);
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
 
         }

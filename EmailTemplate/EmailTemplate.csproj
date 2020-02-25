@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="Transitions, Version=1.2.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Transitions.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\My Received Files\Transitions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
