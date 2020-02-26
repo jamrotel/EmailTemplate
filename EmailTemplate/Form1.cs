@@ -75,46 +75,18 @@ namespace EmailTemplate
             _pnlone.Shown += _pnlone_Shown;
             _pnlone.swipe(true);
         }
-        //Main pannel of - Distribution List services
-        private void panelDistributionListServices_Click_1(object sender, EventArgs e)
+        void _EmailSupport__Shown(object sender, EventArgs e)
         {
-            DistributionListServices _Dis = new DistributionListServices(this);
-            _Dis.swipe(true);
+
         }
-        //Main pannel of - Meeting Room
-        private void panelMeetingRoom_Click(object sender, EventArgs e)
+
+        void _EmailSupport_Closed(object sender, EventArgs e)
         {
-            MeetingRoom _MR = new MeetingRoom(this);
-            _MR.swipe(true);
-        }
-        //Main pannel of - Group Email Account
-        private void panelGroupEmailAccount_Click(object sender, EventArgs e)
-        {
-            GroupEmailAccount _GEA = new GroupEmailAccount(this);
-            _GEA.swipe(true);
+
         }
         // not sure what this is  ??
 
 
-        //=========================================================sub pannels============================================================================
-        //================USER-ACCOUNT-SERVICES==================
-        public void OpenNetworkAccountBundle()
-        {
-            NetworkAccountBundle NAB = new NetworkAccountBundle();
-            NAB.Show();
-        }
-        public void OpenNetworkAccountOnly()
-        {
-            NetworkAccountOnly NAO = new NetworkAccountOnly();
-            NAO.Show();
-        }
-        public void OpenNetworkAccountSuspension()
-        {
-            NetworkAccountSuspension NAS = new NetworkAccountSuspension();
-            NAS.Show();
-        }
-        //================USER-ACCOUNT-SERVICES==================
-        //===============Installation-Accss-REQUEST===================
         public void OpenSoftInstallation()
         {
             SoftwareInstallation sft = new SoftwareInstallation();
