@@ -38,6 +38,7 @@
             this.btnNetworkAccountSuspension = new MetroFramework.Controls.MetroButton();
             this.btnMailContactDeletion = new MetroFramework.Controls.MetroButton();
             this.btnMailContactModify = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnNetworkAccountOnly
@@ -54,6 +55,7 @@
             this.btnNetworkAccountOnly.UseCustomBackColor = true;
             this.btnNetworkAccountOnly.UseCustomForeColor = true;
             this.btnNetworkAccountOnly.UseSelectable = true;
+            this.btnNetworkAccountOnly.Click += new System.EventHandler(this.btnNetworkAccountOnly_Click);
             // 
             // btnChangePermanentUser
             // 
@@ -99,6 +101,7 @@
             this.btnNetworkAccountBundle.UseCustomBackColor = true;
             this.btnNetworkAccountBundle.UseCustomForeColor = true;
             this.btnNetworkAccountBundle.UseSelectable = true;
+            this.btnNetworkAccountBundle.Click += new System.EventHandler(this.btnNetworkAccountBundle_Click);
             // 
             // btnServiceCancellation
             // 
@@ -159,6 +162,7 @@
             this.btnNetworkAccountSuspension.UseCustomBackColor = true;
             this.btnNetworkAccountSuspension.UseCustomForeColor = true;
             this.btnNetworkAccountSuspension.UseSelectable = true;
+            this.btnNetworkAccountSuspension.Click += new System.EventHandler(this.btnNetworkAccountSuspension_Click);
             // 
             // btnMailContactDeletion
             // 
@@ -190,11 +194,23 @@
             this.btnMailContactModify.UseCustomForeColor = true;
             this.btnMailContactModify.UseSelectable = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(37, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(399, 31);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "USER ACCOUNT SERVICES";
+            // 
             // UserAccountServices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMailContactDeletion);
             this.Controls.Add(this.btnMailContactModify);
             this.Controls.Add(this.btnServiceCancellation);
@@ -208,6 +224,7 @@
             this.Name = "UserAccountServices";
             this.Size = new System.Drawing.Size(850, 712);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -223,5 +240,6 @@
         private MetroFramework.Controls.MetroButton btnNetworkAccountSuspension;
         private MetroFramework.Controls.MetroButton btnMailContactDeletion;
         private MetroFramework.Controls.MetroButton btnMailContactModify;
+        private System.Windows.Forms.Label label1;
     }
 }

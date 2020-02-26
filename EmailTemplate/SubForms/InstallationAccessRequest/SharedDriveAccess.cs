@@ -12,9 +12,9 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace EmailTemplate
 {
-    public partial class SharedFileFolderAccess : MetroFramework.Forms.MetroForm
+    public partial class SharedDriveAccess : MetroFramework.Forms.MetroForm
     {
-        public SharedFileFolderAccess()
+        public SharedDriveAccess()
         {
             InitializeComponent();
             cmbAccessType.Items.Insert(0, "Read Only");
@@ -24,14 +24,14 @@ namespace EmailTemplate
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             Outlook.Application application = new Outlook.Application();
-            Outlook.MailItem mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Shared File  Folder Access.oft") as Outlook.MailItem;
+            Outlook.MailItem mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Shared Drive Access.oft") as Outlook.MailItem;
             mail.HTMLBody = mail.HTMLBody.Replace("RequestorFirstName", ""+txtFirstName.Text+"");
             mail.HTMLBody = mail.HTMLBody.Replace("RecipientFirstName", ""+txtRecipientFirstName.Text+"");
             mail.HTMLBody = mail.HTMLBody.Replace("AccessType", "" + cmbAccessType.Text + "");
             mail.HTMLBody = mail.HTMLBody.Replace("FolderPath", "" + txtFolderPath.Text + "");
             mail.To = txtEmailAddress.Text;
             mail.CC = txtRecipientEmail.Text;
-            mail.Subject = txtTicketNumber.Text.ToString() + "- Shared File / Folder Access";
+            mail.Subject = txtTicketNumber.Text.ToString() + "- Shared Drive Access";
             //mail.Attachments.Add(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Attachments\Test.txt");
             mail.Display(false);
         }
@@ -48,6 +48,7 @@ namespace EmailTemplate
             txtFirstName.Clear();
             txtTicketNumber.Clear();
         }
+
 
     }
 }

@@ -84,6 +84,7 @@
             this.panelMeetingRoom.VerticalScrollbarBarColor = true;
             this.panelMeetingRoom.VerticalScrollbarHighlightOnWheel = false;
             this.panelMeetingRoom.VerticalScrollbarSize = 10;
+            this.panelMeetingRoom.Click += new System.EventHandler(this.panelMeetingRoom_Click);
             // 
             // metroLabel7
             // 
@@ -118,6 +119,7 @@
             this.panelDistributionListServices.VerticalScrollbarBarColor = true;
             this.panelDistributionListServices.VerticalScrollbarHighlightOnWheel = false;
             this.panelDistributionListServices.VerticalScrollbarSize = 10;
+            this.panelDistributionListServices.Click += new System.EventHandler(this.panelDistributionListServices_Click_1);
             // 
             // metroLabel6
             // 
@@ -221,6 +223,7 @@
             this.panelGroupEmailAccount.VerticalScrollbarBarColor = true;
             this.panelGroupEmailAccount.VerticalScrollbarHighlightOnWheel = false;
             this.panelGroupEmailAccount.VerticalScrollbarSize = 10;
+            this.panelGroupEmailAccount.Click += new System.EventHandler(this.panelGroupEmailAccount_Click);
             // 
             // metroLabel5
             // 

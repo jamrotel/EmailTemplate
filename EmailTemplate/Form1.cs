@@ -20,15 +20,31 @@ namespace EmailTemplate
             InitializeComponent();
           
         }
-
+        //======================user account creation- pannel variable ============================
         void _pnlone_Shown(object sender, EventArgs e)
         {
-
         }
-
         void _pnlone_Closed(object sender, EventArgs e)
         {
         }
+        //====================================================
+        //========================email support- pannel variable=============================
+        void _EmailSupport__Shown(object sender, EventArgs e)
+        {
+        }
+        void _EmailSupport_Closed(object sender, EventArgs e)
+        {
+        }
+        //====================================================
+        //=====================================================
+        void _Dis__Shown(object sender, EventArgs e)
+        {
+        }
+        void _Dis_Closed(object sender, EventArgs e)
+        {
+        }
+        //====================================================
+        //main pannel of - email support
         private void panelEmailSupport_Click_1(object sender, EventArgs e)
         {
             EmailSupport _EmailSupport = new EmailSupport(this);
@@ -37,18 +53,21 @@ namespace EmailTemplate
             _EmailSupport.swipe(true);
         }
 
+        //main pannel of - email account services
         private void panelEmailAccountServices_Click(object sender, EventArgs e)
         {
             EmailAccountServices _EmailStrike = new EmailAccountServices(this);
             _EmailStrike.swipe(true);
         }
 
+        //Main pannel of - installation / Access request
         private void panelAccess_Click(object sender, EventArgs e)
         {
             InstallationAccessRequest _Access = new InstallationAccessRequest(this);
             _Access.swipe(true);
         }
 
+        //Main pannel of - user account services
         private void panelUserAccount_Click(object sender, EventArgs e)
         {
             UserAccountServices _pnlone = new UserAccountServices(this);
@@ -56,17 +75,46 @@ namespace EmailTemplate
             _pnlone.Shown += _pnlone_Shown;
             _pnlone.swipe(true);
         }
-        void _EmailSupport__Shown(object sender, EventArgs e)
+        //Main pannel of - Distribution List services
+        private void panelDistributionListServices_Click_1(object sender, EventArgs e)
         {
-
+            DistributionListServices _Dis = new DistributionListServices(this);
+            _Dis.swipe(true);
         }
-
-        void _EmailSupport_Closed(object sender, EventArgs e)
+        //Main pannel of - Meeting Room
+        private void panelMeetingRoom_Click(object sender, EventArgs e)
         {
-
+            MeetingRoom _MR = new MeetingRoom(this);
+            _MR.swipe(true);
         }
-     
+        //Main pannel of - Group Email Account
+        private void panelGroupEmailAccount_Click(object sender, EventArgs e)
+        {
+            GroupEmailAccount _GEA = new GroupEmailAccount(this);
+            _GEA.swipe(true);
+        }
+        // not sure what this is  ??
 
+
+        //=========================================================sub pannels============================================================================
+        //================USER-ACCOUNT-SERVICES==================
+        public void OpenNetworkAccountBundle()
+        {
+            NetworkAccountBundle NAB = new NetworkAccountBundle();
+            NAB.Show();
+        }
+        public void OpenNetworkAccountOnly()
+        {
+            NetworkAccountOnly NAO = new NetworkAccountOnly();
+            NAO.Show();
+        }
+        public void OpenNetworkAccountSuspension()
+        {
+            NetworkAccountSuspension NAS = new NetworkAccountSuspension();
+            NAS.Show();
+        }
+        //================USER-ACCOUNT-SERVICES==================
+        //===============Installation-Accss-REQUEST===================
         public void OpenSoftInstallation()
         {
             SoftwareInstallation sft = new SoftwareInstallation();
@@ -86,12 +134,29 @@ namespace EmailTemplate
             RemoteAccessCitrix remoteAccessCitrix = new RemoteAccessCitrix();
             remoteAccessCitrix.Show();
         }
-        public void OpenSharedFileFolderAccess() {
-            SharedFileFolderAccess sharedFileFolderAccess = new SharedFileFolderAccess();
-            sharedFileFolderAccess.Show();
+        public void OpenSharedDriveAccess() {
+            SharedDriveAccess sharedDriveAccess = new SharedDriveAccess();
+            sharedDriveAccess.Show();
+        }
+        public void OpenShareFileAccess()
+        {
+            ShareFileAccess shareFileAccess = new ShareFileAccess();
+            shareFileAccess.Show();
+        }
+        public void OpenMSLyncAccount()
+        {
+            MSLyncAccount mSLyncAccount = new MSLyncAccount();
+            mSLyncAccount.Show();
+            
+        }
+        public void OpenAudioWebConferencing()
+        {
+            AudioWebConferencing audioWebConferencing = new AudioWebConferencing();
+            audioWebConferencing.Show();
+
         }
 
-
+        //===============Installation-Accss-REQUEST===================
     }
-   
+
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Outlook = Microsoft.Office.Interop.Outlook;
+using System.Threading;
+using EmailTemplate.Panel;
 
 namespace EmailTemplate.Panel
 {

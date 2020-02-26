@@ -55,6 +55,7 @@
             this.btnAudioWebConferencing.UseCustomBackColor = true;
             this.btnAudioWebConferencing.UseCustomForeColor = true;
             this.btnAudioWebConferencing.UseSelectable = true;
+            this.btnAudioWebConferencing.Click += new System.EventHandler(this.btnAudioWebConferencing_Click);
             // 
             // btnShareFileAccessInstallation
             // 
@@ -151,6 +152,7 @@
             this.btnSharedDriveAccess.UseCustomBackColor = true;
             this.btnSharedDriveAccess.UseCustomForeColor = true;
             this.btnSharedDriveAccess.UseSelectable = true;
+            this.btnSharedDriveAccess.Click += new System.EventHandler(this.btnSharedDriveAccess_Click);
             // 
             // btnScreenSaverExemption
             // 
@@ -181,6 +183,7 @@
             this.btnMSLyncAccountCreation.UseCustomBackColor = true;
             this.btnMSLyncAccountCreation.UseCustomForeColor = true;
             this.btnMSLyncAccountCreation.UseSelectable = true;
+            this.btnMSLyncAccountCreation.Click += new System.EventHandler(this.btnMSLyncAccountCreation_Click);
             // 
             // InstallationAccessRequest
             // 

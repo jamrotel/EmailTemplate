@@ -30,6 +30,7 @@
         {
             this.metroButton12 = new MetroFramework.Controls.MetroButton();
             this.metroButton14 = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // metroButton12
@@ -42,7 +43,7 @@
             this.metroButton12.Name = "metroButton12";
             this.metroButton12.Size = new System.Drawing.Size(226, 87);
             this.metroButton12.TabIndex = 17;
-            this.metroButton12.Text = "STRIKE 3 - \r\nPending Closure Approval";
+            this.metroButton12.Text = "Meeting Room \r\nModification And Acces";
             this.metroButton12.UseCustomBackColor = true;
             this.metroButton12.UseCustomForeColor = true;
             this.metroButton12.UseSelectable = true;
@@ -57,25 +58,40 @@
             this.metroButton14.Name = "metroButton14";
             this.metroButton14.Size = new System.Drawing.Size(226, 87);
             this.metroButton14.TabIndex = 15;
-            this.metroButton14.Text = "STRIKE 1 - \r\nPending Closure Approval";
+            this.metroButton14.Text = "Create Meeting Room";
             this.metroButton14.UseCustomBackColor = true;
             this.metroButton14.UseCustomForeColor = true;
             this.metroButton14.UseSelectable = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(56, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(241, 31);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "MEETING ROOM";
             // 
             // MeetingRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.metroButton12);
             this.Controls.Add(this.metroButton14);
             this.Name = "MeetingRoom";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private MetroFramework.Controls.MetroButton metroButton12;
         private MetroFramework.Controls.MetroButton metroButton14;
+        private System.Windows.Forms.Label label1;
     }
 }
