@@ -1,6 +1,6 @@
 ﻿namespace EmailTemplate
 {
-    partial class NetworkAccountSuspension
+    partial class ModifyEndDate
     {
         /// <summary>
         /// Required designer variable.
@@ -38,10 +38,11 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtEmailAddress = new System.Windows.Forms.TextBox();
-            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtFullname = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtdate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
+            this.checkBoxPermanent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(108, 234);
+            this.label2.Location = new System.Drawing.Point(129, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 1;
@@ -143,24 +144,24 @@
             this.txtEmailAddress.Size = new System.Drawing.Size(255, 28);
             this.txtEmailAddress.TabIndex = 2;
             // 
-            // txtusername
+            // txtFullname
             // 
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(284, 268);
-            this.txtusername.Multiline = true;
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(255, 28);
-            this.txtusername.TabIndex = 16;
+            this.txtFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullname.Location = new System.Drawing.Point(284, 268);
+            this.txtFullname.Multiline = true;
+            this.txtFullname.Name = "txtFullname";
+            this.txtFullname.Size = new System.Drawing.Size(255, 28);
+            this.txtFullname.TabIndex = 16;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(120, 268);
+            this.label9.Location = new System.Drawing.Point(108, 268);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 20);
+            this.label9.Size = new System.Drawing.Size(155, 20);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Recipient Username:";
+            this.label9.Text = "Recipient Full Name:";
             // 
             // txtdate
             // 
@@ -174,21 +175,33 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 308);
+            this.label5.Location = new System.Drawing.Point(219, 302);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 20);
+            this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 19;
-            this.label5.Text = "Reactivation Date";
+            this.label5.Text = "Date";
             // 
-            // NetworkAccountSuspension
+            // checkBoxPermanent
+            // 
+            this.checkBoxPermanent.AutoSize = true;
+            this.checkBoxPermanent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPermanent.Location = new System.Drawing.Point(284, 343);
+            this.checkBoxPermanent.Name = "checkBoxPermanent";
+            this.checkBoxPermanent.Size = new System.Drawing.Size(117, 24);
+            this.checkBoxPermanent.TabIndex = 20;
+            this.checkBoxPermanent.Text = "Never Expire";
+            this.checkBoxPermanent.UseVisualStyleBackColor = true;
+            // 
+            // ModifyEndDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 466);
+            this.Controls.Add(this.checkBoxPermanent);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtdate);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txtFullname);
             this.Controls.Add(this.txtEmailAddress);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnGenerate);
@@ -200,8 +213,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.Name = "NetworkAccountSuspension";
-            this.Text = "Email | Network Account Suspension";
+            this.Name = "ModifyEndDate";
+            this.Text = "Email | Modify End Date Request";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,9 +232,10 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmailAddress;
-        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtFullname;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker txtdate;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBoxPermanent;
     }
 }

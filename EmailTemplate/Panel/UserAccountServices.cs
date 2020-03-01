@@ -29,6 +29,37 @@ namespace EmailTemplate.Panel
             em.OpenNetworkAccountOnly();
 
         }
+        private void btnNetworkAccountSuspension_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenNetworkAccountSuspension();
+
+        }
+
+        private void btnEmployeeNetworkEmailReactivation_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenEmployeeNetworkEmailReactivation();
+        }
+
+        private void btnServiceCancellation_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenITEquipmentServiceCancellation();
+        }
+
+        private void btnChangePermanentUser_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenChangetoPermanentUser();
+        }
+
+        private void btnModifyEndDate_Click(object sender, EventArgs e)
+        {
+            EmailTemplate em = new EmailTemplate();
+            em.OpenModifyEndDate();
+        }
+
         //================USER-ACCOUNT-SERVICES==================
 
     }

@@ -87,13 +87,6 @@ namespace EmailTemplate
             MeetingRoom _MR = new MeetingRoom(this);
             _MR.swipe(true);
         }
-        //Main pannel of - Group Email Account
-        private void panelGroupEmailAccount_Click(object sender, EventArgs e)
-        {
-            GroupEmailAccount _GEA = new GroupEmailAccount(this);
-            _GEA.swipe(true);
-        }
-        // not sure what this is  ??
 
 
         //=========================================================sub pannels============================================================================
@@ -107,6 +100,31 @@ namespace EmailTemplate
         {
             NetworkAccountOnly NAO = new NetworkAccountOnly();
             NAO.Show();
+        }
+        public void OpenNetworkAccountSuspension()
+        {
+            NetworkAccountSuspension NAS = new NetworkAccountSuspension();
+            NAS.Show();
+        }
+        public void OpenEmployeeNetworkEmailReactivation()
+        {
+            EmployeeNetworkEmailReactivation ENER = new EmployeeNetworkEmailReactivation();
+            ENER.Show();
+        }
+        public void OpenITEquipmentServiceCancellation()
+        {
+            ITEquipmentServiceCancellation ITSC = new ITEquipmentServiceCancellation();
+            ITSC.Show();
+        }
+        public void OpenChangetoPermanentUser()
+        {
+            ChangetoPermanentUser CTPU = new ChangetoPermanentUser();
+            CTPU.Show();
+        }
+        public void OpenModifyEndDate()
+        {
+            ModifyEndDate MED = new ModifyEndDate();
+            MED.Show();
         }
         //================USER-ACCOUNT-SERVICES==================
         //===============Installation-Accss-REQUEST===================

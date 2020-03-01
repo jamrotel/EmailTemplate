@@ -169,20 +169,6 @@
       <DependentUpon>RemoteAccessCitrix.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.Designer.cs">
-      <DependentUpon>AudioWebConferencing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.Designer.cs">
-      <DependentUpon>SharedDriveAccess.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.Designer.cs">
       <DependentUpon>ShareFileAccess.cs</DependentUpon>
     </Compile>
