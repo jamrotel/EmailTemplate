@@ -202,7 +202,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "AudioWebConferencing";
-            this.Text = "Email | Audio Web Conferencing";
+            this.Text = "Audio Web Conferencing";
             this.ResumeLayout(false);
             this.PerformLayout();
 
