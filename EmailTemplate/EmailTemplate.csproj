@@ -153,20 +153,6 @@
       <DependentUpon>RemoteAccessCitrix.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\AudioWebConferencing.Designer.cs">
-      <DependentUpon>AudioWebConferencing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\SharedDriveAccess.Designer.cs">
-      <DependentUpon>SharedDriveAccess.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="SubForms\InstallationAccessRequest\ShareFileAccess.Designer.cs">
       <DependentUpon>ShareFileAccess.cs</DependentUpon>
     </Compile>
@@ -181,30 +167,6 @@
     </Compile>
     <Compile Include="SubForms\InstallationAccessRequest\SoftwareInstallation.Designer.cs">
       <DependentUpon>SoftwareInstallation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ChangetoPermanentUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ChangetoPermanentUser.Designer.cs">
-      <DependentUpon>ChangetoPermanentUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ITEquipmentServiceCancellation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ITEquipmentServiceCancellation.Designer.cs">
-      <DependentUpon>ITEquipmentServiceCancellation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\EmployeeNetworkEmailReactivation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\EmployeeNetworkEmailReactivation.Designer.cs">
-      <DependentUpon>EmployeeNetworkEmailReactivation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ModifyEndDate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubForms\UserAccountServices\ModifyEndDate.Designer.cs">
-      <DependentUpon>ModifyEndDate.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\UserAccountServices\NetworkAccountSuspension.cs">
       <SubType>Form</SubType>
@@ -285,18 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\InstallationAccessRequest\SoftwareInstallation.resx">
       <DependentUpon>SoftwareInstallation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\UserAccountServices\ChangetoPermanentUser.resx">
-      <DependentUpon>ChangetoPermanentUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\UserAccountServices\ITEquipmentServiceCancellation.resx">
-      <DependentUpon>ITEquipmentServiceCancellation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\UserAccountServices\EmployeeNetworkEmailReactivation.resx">
-      <DependentUpon>EmployeeNetworkEmailReactivation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\UserAccountServices\ModifyEndDate.resx">
-      <DependentUpon>ModifyEndDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\UserAccountServices\NetworkAccountSuspension.resx">
       <DependentUpon>NetworkAccountSuspension.cs</DependentUpon>

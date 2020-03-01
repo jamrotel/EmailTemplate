@@ -87,13 +87,6 @@ namespace EmailTemplate
             MeetingRoom _MR = new MeetingRoom(this);
             _MR.swipe(true);
         }
-        //Main pannel of - Group Email Account
-        private void panelGroupEmailAccount_Click(object sender, EventArgs e)
-        {
-            GroupEmailAccount _GEA = new GroupEmailAccount(this);
-            _GEA.swipe(true);
-        }
-        // not sure what this is  ??
 
 
         //=========================================================sub pannels============================================================================
