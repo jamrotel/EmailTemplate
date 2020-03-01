@@ -12,13 +12,14 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace EmailTemplate
 {
-    public partial class NetworkAccountSuspension : MetroFramework.Forms.MetroForm
+    public partial class ChangetoPermanentUser : MetroFramework.Forms.MetroForm
     {    
         Outlook.MailItem mail;
-        public NetworkAccountSuspension()
+        public ChangetoPermanentUser()
         {
             InitializeComponent();
 
+         
         }
 
         //========================================================================================
@@ -26,18 +27,18 @@ namespace EmailTemplate
         {
             Outlook.Application application = new Outlook.Application();
            
-                mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Network Account Suspension.oft") as Outlook.MailItem;
+                mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Change to Permanent User.oft") as Outlook.MailItem;
           
             
           
             mail.HTMLBody = mail.HTMLBody.Replace("RequestorName", ""+txtFirstName.Text+"");
             mail.HTMLBody = mail.HTMLBody.Replace("TicketNumber", "" + txtTicketNumber.Text + "");
-            mail.HTMLBody = mail.HTMLBody.Replace("UsernameDetails", ""+ txtusername.Text+"");
-            mail.HTMLBody = mail.HTMLBody.Replace("Date", "" + txtdate.Text + "");
-            mail.HTMLBody = mail.HTMLBody.Replace("RecipientEmail", "" + txtRecipientEmail.Text + "");
+            mail.HTMLBody = mail.HTMLBody.Replace("FullnameDetails", ""+ txtFullName.Text+"");
+            mail.HTMLBody = mail.HTMLBody.Replace("EmailDetails", "" + txtRecipientEmail.Text + "");
+
             mail.To = txtEmailAddress.Text;
             //mail.CC = txtRecipientEmail.Text;
-            mail.Subject = txtTicketNumber.Text.ToString() + "- Network Account Suspension";
+            mail.Subject = txtTicketNumber.Text.ToString() + "- Change to Permanent User";
             //mail.Attachments.Add(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Attachments\Test.txt");
             mail.Display(false);
         }
@@ -46,6 +47,7 @@ namespace EmailTemplate
         {
             ClearText();
 
+           
         }
 
         public void ClearText()
@@ -54,10 +56,10 @@ namespace EmailTemplate
             txtRecipientEmail.Clear();
             txtFirstName.Clear();
             txtTicketNumber.Clear();   
-            txtusername.Clear();
-            
+            txtFullName.Clear();
+           
         }
 
-      
+     
     }
 }

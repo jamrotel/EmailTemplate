@@ -71,6 +71,7 @@
             this.btnChangePermanentUser.UseCustomBackColor = true;
             this.btnChangePermanentUser.UseCustomForeColor = true;
             this.btnChangePermanentUser.UseSelectable = true;
+            this.btnChangePermanentUser.Click += new System.EventHandler(this.btnChangePermanentUser_Click);
             // 
             // btnEmployeeNetworkEmailReactivation
             // 
@@ -86,6 +87,7 @@
             this.btnEmployeeNetworkEmailReactivation.UseCustomBackColor = true;
             this.btnEmployeeNetworkEmailReactivation.UseCustomForeColor = true;
             this.btnEmployeeNetworkEmailReactivation.UseSelectable = true;
+            this.btnEmployeeNetworkEmailReactivation.Click += new System.EventHandler(this.btnEmployeeNetworkEmailReactivation_Click);
             // 
             // btnNetworkAccountBundle
             // 
@@ -117,6 +119,7 @@
             this.btnServiceCancellation.UseCustomBackColor = true;
             this.btnServiceCancellation.UseCustomForeColor = true;
             this.btnServiceCancellation.UseSelectable = true;
+            this.btnServiceCancellation.Click += new System.EventHandler(this.btnServiceCancellation_Click);
             // 
             // btnMailContactCreation
             // 
@@ -147,6 +150,7 @@
             this.btnModifyEndDate.UseCustomBackColor = true;
             this.btnModifyEndDate.UseCustomForeColor = true;
             this.btnModifyEndDate.UseSelectable = true;
+            this.btnModifyEndDate.Click += new System.EventHandler(this.btnModifyEndDate_Click);
             // 
             // btnNetworkAccountSuspension
             // 

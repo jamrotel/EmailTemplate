@@ -12,10 +12,10 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace EmailTemplate
 {
-    public partial class NetworkAccountSuspension : MetroFramework.Forms.MetroForm
+    public partial class ModifyEndDate : MetroFramework.Forms.MetroForm
     {    
         Outlook.MailItem mail;
-        public NetworkAccountSuspension()
+        public ModifyEndDate()
         {
             InitializeComponent();
 
@@ -26,18 +26,24 @@ namespace EmailTemplate
         {
             Outlook.Application application = new Outlook.Application();
            
-                mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Network Account Suspension.oft") as Outlook.MailItem;
+                mail = application.CreateItemFromTemplate(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Access\AU-SDXXXX - Modify End Date Request.oft") as Outlook.MailItem;
           
             
           
             mail.HTMLBody = mail.HTMLBody.Replace("RequestorName", ""+txtFirstName.Text+"");
             mail.HTMLBody = mail.HTMLBody.Replace("TicketNumber", "" + txtTicketNumber.Text + "");
-            mail.HTMLBody = mail.HTMLBody.Replace("UsernameDetails", ""+ txtusername.Text+"");
-            mail.HTMLBody = mail.HTMLBody.Replace("Date", "" + txtdate.Text + "");
+            mail.HTMLBody = mail.HTMLBody.Replace("FullnameDetails", ""+ txtFullname.Text+"");
+            if (checkBoxPermanent.Checked)
+            {
+                mail.HTMLBody = mail.HTMLBody.Replace("Date", "Permanent");
+            }
+            else
+            { mail.HTMLBody = mail.HTMLBody.Replace("Date", "" + txtdate.Text + ""); }
+
             mail.HTMLBody = mail.HTMLBody.Replace("RecipientEmail", "" + txtRecipientEmail.Text + "");
             mail.To = txtEmailAddress.Text;
             //mail.CC = txtRecipientEmail.Text;
-            mail.Subject = txtTicketNumber.Text.ToString() + "- Network Account Suspension";
+            mail.Subject = txtTicketNumber.Text.ToString() + "- Modify End Date Request";
             //mail.Attachments.Add(AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates\Attachments\Test.txt");
             mail.Display(false);
         }
@@ -54,7 +60,7 @@ namespace EmailTemplate
             txtRecipientEmail.Clear();
             txtFirstName.Clear();
             txtTicketNumber.Clear();   
-            txtusername.Clear();
+            txtFullname.Clear();
             
         }
 

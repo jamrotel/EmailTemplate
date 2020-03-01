@@ -75,18 +75,59 @@ namespace EmailTemplate
             _pnlone.Shown += _pnlone_Shown;
             _pnlone.swipe(true);
         }
-        void _EmailSupport__Shown(object sender, EventArgs e)
+        //Main pannel of - Distribution List services
+        private void panelDistributionListServices_Click_1(object sender, EventArgs e)
         {
-
+            DistributionListServices _Dis = new DistributionListServices(this);
+            _Dis.swipe(true);
+        }
+        //Main pannel of - Meeting Room
+        private void panelMeetingRoom_Click(object sender, EventArgs e)
+        {
+            MeetingRoom _MR = new MeetingRoom(this);
+            _MR.swipe(true);
         }
 
-        void _EmailSupport_Closed(object sender, EventArgs e)
+
+        //=========================================================sub pannels============================================================================
+        //================USER-ACCOUNT-SERVICES==================
+        public void OpenNetworkAccountBundle()
         {
-
+            NetworkAccountBundle NAB = new NetworkAccountBundle();
+            NAB.Show();
         }
-        // not sure what this is  ??
-
-
+        public void OpenNetworkAccountOnly()
+        {
+            NetworkAccountOnly NAO = new NetworkAccountOnly();
+            NAO.Show();
+        }
+        public void OpenNetworkAccountSuspension()
+        {
+            NetworkAccountSuspension NAS = new NetworkAccountSuspension();
+            NAS.Show();
+        }
+        public void OpenEmployeeNetworkEmailReactivation()
+        {
+            EmployeeNetworkEmailReactivation ENER = new EmployeeNetworkEmailReactivation();
+            ENER.Show();
+        }
+        public void OpenITEquipmentServiceCancellation()
+        {
+            ITEquipmentServiceCancellation ITSC = new ITEquipmentServiceCancellation();
+            ITSC.Show();
+        }
+        public void OpenChangetoPermanentUser()
+        {
+            ChangetoPermanentUser CTPU = new ChangetoPermanentUser();
+            CTPU.Show();
+        }
+        public void OpenModifyEndDate()
+        {
+            ModifyEndDate MED = new ModifyEndDate();
+            MED.Show();
+        }
+        //================USER-ACCOUNT-SERVICES==================
+        //===============Installation-Accss-REQUEST===================
         public void OpenSoftInstallation()
         {
             SoftwareInstallation sft = new SoftwareInstallation();
